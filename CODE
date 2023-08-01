@@ -1,0 +1,13 @@
+### 1. Import `numpy`, `numpy.linalg`, `matplotlib.pyplot`, and `pandas`. Use the appropriate aliases when importing these modules.
+import numpy as np
+import numpy.linalg as la
+import matplotlib.pyplot as plt
+import pandas as pd
+
+### 2. Load the data from the file named `data_stock_returns.csv` into a `DatFrame` called `returns`. The file `data_stock_returns.csv` contains daily returns of a number of stocks selected from the S&P 500 universe. The rows of the csv file represent the returns over a number of days, and the columns represent individual stocks labeled by their NYSE ticker symbol, e.g., Apple stock is labeled `AAPL`.
+returns = pd.read_csv('data_stock_returns.csv')
+
+### 3. View the `head` of the `returns` `DataFrame`
+returns.head()
+
+### 4. View the `tail` of the `returns` `DataFrame`
